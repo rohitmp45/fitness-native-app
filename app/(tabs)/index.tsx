@@ -5,7 +5,9 @@ import { Text, TouchableOpacity, View } from 'react-native';
 export default function Home() {
   return (
     <View className="flex-1 bg-gray-900 p-4">
-      <Text className="mb-4 text-2xl font-bold text-white">Welcome back</Text>
+      <Text className="mb-4 text-2xl font-bold text-white">
+        Welcome to fitness app
+      </Text>
 
       {/* Row 1 */}
       <View className="mb-4 flex-row gap-3">
@@ -44,7 +46,7 @@ export default function Home() {
       {/* Summary Section */}
       <View className="mt-2 rounded-2xl bg-gray-800 p-4">
         <Text className="text-lg font-semibold text-white">
-          Today's Summary
+          Today&apos;s Summary
         </Text>
         <View className="mt-3 flex-row justify-between">
           <View>
