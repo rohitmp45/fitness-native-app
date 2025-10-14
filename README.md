@@ -103,28 +103,10 @@ react-native-boilerplate/
 └── e2e/                # End-to-end tests
 ```
 
-## 🎨 Styling with NativeWind
+##   Styling with NativeWind
+ 
 
-```tsx
-import { View, Text } from 'react-native';
 
-export function Welcome() {
-  return (
-    <View className="flex-1 items-center justify-center bg-white dark:bg-gray-900">
-      <Text className="text-3xl font-bold text-gray-900 dark:text-white">
-        Hello World
-      </Text>
-    </View>
-  );
-}
-```
-
-## 📱 Platform Support
-
-- ✅ **iOS** - Full support with latest features
-- ✅ **Android** - Full support with latest features
-- ✅ **Web** - Cross-platform web support
-- ✅ **Development** - Hot reload, debugging, etc.
 
 ## 🔧 Configuration
 
@@ -178,148 +160,7 @@ npm run check-types   # TypeScript type checking
 npm run format        # Prettier code formatting
 npm run format:full   # Full formatting with ESLint
 ```
-
-#### 🛡️ **To Re-enable Pre-commit Hooks**
-If you want to bring back automated quality gates:
-
-```bash
-# Re-enable pre-commit hooks
-mv .husky/pre-commit.disabled .husky/pre-commit
-git add .husky/pre-commit
-git commit -m "Re-enable pre-commit hooks"
-```
-
-**With hooks enabled, commits will automatically run:**
-- ✅ **ESLint** - Code quality and style checks
-- ✅ **TypeScript** - Type safety verification
-- ✅ **Prettier** - Automatic code formatting
-- ❌ **Commit blocked** if any checks fail
-
-#### 🚫 **To Disable Pre-commit Hooks Again**
-```bash
-# Disable pre-commit hooks
-mv .husky/pre-commit .husky/pre-commit.disabled
-git add .husky/pre-commit.disabled
-git commit -m "Disable pre-commit hooks"
-```
-
-#### 🎯 **Recommended Workflow**
-- **For quick development**: Use direct commits (current setup)
-- **Before important changes**: Run manual checks
-- **For production code**: Re-enable pre-commit hooks
-- **For team projects**: Keep hooks enabled for consistency
-
-## 📚 Documentation
-
-- 📖 [Developer Setup Guide](docs/DEVELOPER_SETUP_GUIDE.md) - Complete setup instructions
-
-## 🎯 Best Practices
-
-### Code Quality
-- ✅ **TypeScript** for type safety
-- ✅ **ESLint** for code quality
-- ✅ **Prettier** for consistent formatting
-- ✅ **Git hooks** for automated checks
-
-### Performance
-- ✅ **Expo SDK 52** optimizations
-- ✅ **React Native 0.76** improvements
-- ✅ **NativeWind** for efficient styling
-- ✅ **Fast refresh** for development
-
-### Security
-- ✅ **Latest LTS** versions
-- ✅ **Security patches** applied
-- ✅ **Dependency scanning** ready
-- ✅ **Production hardened** configuration
-
-## 🔍 Troubleshooting
-
-### Common Issues
-1. **Node.js version**: Ensure you're using Node.js 18+
-2. **Dependencies**: Run `npm install` if packages are missing
-3. **Cache issues**: Clear npm cache with `npm cache clean --force`
-4. **TypeScript errors**: Run `npm run check-types` for details
-
-### Commit & Quality Check Issues
-
-#### **Pre-commit Hook Problems**
-```bash
-# If pre-commit hooks are causing issues
-mv .husky/pre-commit .husky/pre-commit.disabled
-git add .husky/pre-commit.disabled
-git commit -m "Disable problematic pre-commit hooks"
-```
-
-#### **Manual Quality Checks**
-```bash
-# Run quality checks manually
-npm run lint          # Check code quality
-npm run check-types   # Verify TypeScript types
-npm run format        # Format code
-```
-
-#### **Bypass Commit Checks (Emergency)**
-```bash
-# Skip all pre-commit checks (use sparingly)
-git commit --no-verify -m "Emergency commit - skip checks"
-```
-
-### Getting Help
-- 📖 Check the [Developer Setup Guide](docs/DEVELOPER_SETUP_GUIDE.md)
-- 🔍 Run the verification script: `./scripts/verify-boilerplate.sh`
-- 📚 Review the documentation in the `docs/` folder
-
-## 🎉 Success Indicators
-
-### ✅ Your Setup is Working If:
-- [x] `npm start` opens Expo development server
-- [x] `npm run check-types` shows no errors
-- [x] `npm run lint` shows no errors
-- [x] `npm run dev:ios` opens iOS simulator (macOS)
-- [x] `npm run dev:android` opens Android emulator
-- [x] `npm run web` opens web browser
-- [x] Git commits trigger pre-commit hooks
-
-## 🚀 Next Steps
-
-### For New Projects:
-1. **Customize app.json** with your app details
-2. **Replace Welcome component** with your app content
-3. **Add your own pages** in the `app/` directory
-4. **Set up your branding** and styling
-5. **Configure environment variables** if needed
-
-
-## 👨‍💻 Author
-
-**Pruthvi Darji** with helping hand **Cursor AI**
-
-## 🙏 Acknowledgments
-
-- [Expo](https://expo.dev) for the amazing development platform
-- [React Native](https://reactnative.dev) for the cross-platform framework
-- [NativeWind](https://www.nativewind.dev) for Tailwind CSS support
-- [Expo Router](https://expo.github.io/router) for file-based routing
-
----
-
-## 🎯 Final Status
-
-**✅ BOILERPLATE VERIFICATION: PASSED**
-
-This boilerplate has been thoroughly tested and is **100% ready for all devs**!
-
-### Tested & Verified:
-- ✅ **Node.js 18+ compatibility**
-- ✅ **All development tools working**
-- ✅ **Cross-platform support**
-- ✅ **Modern development workflow**
-- ✅ **Production-ready configuration**
-
----
-
-*Last updated: August 6, 2024*
+ 
 *Node.js: 18.19.0 | Expo SDK: 52.0.0 | React Native: 0.76.9*
 
 
