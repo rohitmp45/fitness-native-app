@@ -1,4 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
+import StepperExample from 'app/componenet/stepper';
 import { Link } from 'expo-router';
 import { useMemo, useRef, useState } from 'react';
 import {
@@ -140,6 +141,8 @@ export default function Home() {
           />
         ))}
       </View>
+
+      <StepperExample />
     </View>
   );
 }
